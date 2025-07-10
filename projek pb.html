@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>crowdsourcinglecturenote.com</title> 
+    <meta name="description" content="platform crowdsourching untuk berbagi catatan kuliah mahasiswa. Unggah, diskusi, dan dapatkan reward!">
+    <meta name="keywords" content="crowdsourcing, catatan kuliah mahasiwa, unggah catatan, diskusi kuliah, reward mahasiswa">
+    <meta name="author" content="Steven Enjelius Marsual.S, Sabrina Zahrotul Nisa, Noor Jannah">     
+    <link rel="stylesheet" href="style.css">   
+</head>
+<body>
+    <header>
+        <h1>Crowdsourcing student lecture note</h1>
+        <nav>
+            <ul>
+                <li><a href="#unggah">Unggah Catatan</a></li>
+                <li><a href="#premium">Langganan Premium</a></li>
+                <li><a href="#diskusi">Diskusi</a></li>
+                <li><a href="#reward">Reward</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="register.html">Register</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="unggah">
+        <h2>Unggah Catatan Anda</h2>
+        <form id="uploadForm">
+            <label for="fileUpload">Pilih File:</label>
+            <input type="file" id="fileUpload" name="fileUpload" accept=".pdf, .doc, .docx, .txt, .jpg, .png, .mp3">
+            <button type="submit">Unggah</button>
+        </form>
+        <p>Catatan Anda akan diperiksa kualitasnya menggunakan AI.</p>
+    </section>
+
+    <section id="premium">
+        <h2>Langganan Premium</h2>
+        <p>Dapatkan akses ke konten eksklusif dengan berlangganan premium.</p>
+        <button onclick="subscribe()">Berlangganan Sekarang</button>
+    </section>
+
+    <section id="diskusi">
+        <h2>Diskusi Mata Kuliah</h2>
+        <div id="discussionForum">
+            <textarea id="discussionInput" placeholder="Tulis pertanyaan atau komentar Anda..."></textarea>
+            <button onclick="postDiscussion()">Post</button>
+            <div id="discussionPosts"></div>
+        </div>
+    </section>
+
+    <section id="reward">
+        <h2>Sistem Reward</h2>
+        <p>KUMPULKAN POINT DAN DAPATKAN KEBERUNTUNGAN MU MELAUI TUKAR POINT</p>
+        <div id="rewardPoints">
+            <p>Poin Anda: <span id="points">0</span></p>
+            <button onclick="redeemPoints()">Tukar Poin</button>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Crowdsourching Lecture Note. Alright Reserved by Steven Enjelius Marsual.S S1 Teknik Industri Telkom University Surabaya</p>
+    </footer>
+    <script src="script.js"></script>
+
+    
+</body>
+</html>
